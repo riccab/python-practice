@@ -1,0 +1,23 @@
+---
+components:
+- name: bitbucket
+  version: 5.16.0
+- name: confluence
+  version: 6.13.0
+
+images:
+- image: centos
+  tag: 7.6.1810
+- image: centos7
+  tag: 76
+- image: bitbucket
+  tag: 41
+  ports:
+  - 7990:7990
+  - 7999:7999
+- image: confluence
+  tag: 35
+  ports:
+  - 8090:8090
+  - 8091:8091
+
